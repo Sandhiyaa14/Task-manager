@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [taskName, setTaskName] = useState("");
   const [taskDesc, setTaskDesc] = useState("");
-  const [status, setStatus] = useState("To Do");
+  const [status, setStatus] = useState("To do");
   const [data, setData] = useState([]);
   const [taskId, setTaskId] = useState(null);
   const [filter, setFilter] = useState("All");
@@ -121,7 +121,7 @@ function App() {
             onChange={(e) => setStatus(e.target.value)}
             className="w-full border border-slate-200 px-2 py-1 rounded"
           >
-            <option value="To Do">To Do</option>
+            <option value="To do">To Do</option>
             <option value="Completed">Completed</option>
             <option value="Pending">Pending</option>
           </select>
